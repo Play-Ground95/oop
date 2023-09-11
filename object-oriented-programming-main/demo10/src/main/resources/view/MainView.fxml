@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="219.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.demo10.controller.MainViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="105.0" layoutY="25.0" text="OOP in Action: Demo10" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="40.0" spacing="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Enter amount: ">
+                     <font>
+                        <Font name="Ubuntu" size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="txtAmount" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Button fx:id="btnDeposit" mnemonicParsing="false" onAction="#btnDepositOnAction" style="-fx-background-color: lightblue;" text="DEPOSIT">
+                     <font>
+                        <Font name="Ubuntu" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnWithdraw" mnemonicParsing="false" onAction="#btnWithdrawOnAction" style="-fx-background-color: lightgreen;" text="WITHDRAW">
+                     <font>
+                        <Font name="Ubuntu" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="lblBalance" text="Balance: Rs. 0.00">
+               <font>
+                  <Font name="Ubuntu Bold" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnPrintPassbook" mnemonicParsing="false" onAction="#btnPrintPassbookOnAction" style="-fx-background-color: lightgray;" text="PRINT PASSBOOK">
+               <font>
+                  <Font name="Ubuntu" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
